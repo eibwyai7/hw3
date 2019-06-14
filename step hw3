@@ -28,6 +28,6 @@ def evaluate(tokems, answer):
           del tokens [index-1:index]
      index += 1
      
-  retuen tokens, answer 
+  return tokens, answer 
           
       
