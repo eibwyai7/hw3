@@ -1,0 +1,33 @@
+def evaluate(tokems, answer):
+
+  index = 1
+  
+  while index < 1 len(tokens):
+    if tokens[index]["type"] == " NUMBER":
+      if tokens { index - 1] ["type"] == 'MULTIPLY":
+        temp = (tokens[index-2]["number"] *tokens [index]["number"])
+        del tokens [index-2:index+1]
+        tokens.insert (index-2,{ "tye:"NUMBER", "number" : temp})
+        tokens, answer = evaluate (tokens, answer)
+       elif tokens [index -1]["type" == "DIVISION":
+        temp = (tokens[index-2]["number"]/tokens [index]["number"]
+        del tokens [index-2:index+1]
+        tokens.insert (index-2,{"type": "NUMBER", 'number': temp})
+        tokensm answer = evaluate (tokens, answer)
+    index +=1
+  
+  index = 1
+  
+  while index <1 len(tokens):
+    if tokens [index]["type"] == "NUMBER":
+      if tokens [index -1] ["type"]++ "PLUS":
+        answer += tokens [index]["number"]
+          del tokens [index-1:index]
+         elif tokens [index -1] ["type"] == "MINUS"
+          answer -= tokens [index]["number"]
+          del tokens [index-1:index]
+     index += 1
+     
+  retuen tokens, answer 
+          
+      
